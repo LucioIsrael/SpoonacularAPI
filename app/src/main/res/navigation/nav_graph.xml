@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/recipesFragment">
+
+    <fragment
+        android:id="@+id/createRecipeFragment"
+        android:name="br.com.treino.spooncularapi.ui.createRecipe.CreateRecipeFragment"
+        android:label="CreateRecipeFragment" >
+        <action
+            android:id="@+id/action_createRecipeFragment_to_recipeDetailFragment"
+            app:destination="@id/recipeDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recipeDetailFragment"
+        android:name="br.com.treino.spooncularapi.ui.recipeDetail.RecipeDetailFragment"
+        android:label="RecipeDetailFragment" />
+    <fragment
+        android:id="@+id/recipesFragment"
+        android:name="br.com.treino.spooncularapi.ui.recipes.RecipesFragment"
+        android:label="RecipesFragment" >
+        <action
+            android:id="@+id/action_recipesFragment_to_recipeDetailFragment"
+            app:destination="@id/recipeDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/saveRecipeFragment"
+        android:name="br.com.treino.spooncularapi.ui.saves.SaveRecipeFragment"
+        android:label="SaveRecipeFragment" >
+        <action
+            android:id="@+id/action_saveRecipeFragment_to_recipeDetailFragment"
+            app:destination="@id/recipeDetailFragment" />
+    </fragment>
+</navigation>

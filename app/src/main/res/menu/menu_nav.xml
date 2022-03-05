@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/recipesFragment"
+        android:icon="@drawable/ic_baseline_fastfood_24"
+        android:title="Receitas"/>
+    <item
+        android:id="@+id/createRecipeFragment"
+        android:icon="@drawable/ic_baseline_add"
+        android:title="Adicionar receita"/>
+    <item
+        android:id="@+id/saveRecipeFragment"
+        android:icon="@drawable/ic_baseline_favorite"
+        android:title="Favoritos"/>
+
+
+</menu>
