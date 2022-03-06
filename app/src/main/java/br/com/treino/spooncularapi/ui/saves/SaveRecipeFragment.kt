@@ -5,7 +5,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import br.com.treino.spooncularapi.databinding.SaveRecipeFragmentBinding
 import br.com.treino.spooncularapi.ui.base.BaseFragment
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class SaveRecipeFragment: BaseFragment<SaveRecipeFragmentBinding, SaveRecipeViewModel>() {
 
     override val viewModel: SaveRecipeViewModel by viewModels()
